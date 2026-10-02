@@ -1,0 +1,15 @@
+{
+  "name": "selfhost-notes-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "示例站：用 templates/01-vitepress-docs-site 模板填出来的成品站",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

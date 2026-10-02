@@ -12,6 +12,8 @@
 
 **使用方法**：进入模板目录 → 读它的 `README.md` → 照着 `GUIDES/` 填内容。
 
+**填完长什么样**：[examples/selfhost-notes](examples/selfhost-notes/) 是一个用 01 模板填出来的成品站（7 页，内容全为可核验事实）。开始填之前建议先看一遍。
+
 ---
 
 ## 分类体系
@@ -59,11 +61,16 @@ site-templates/
 ├─ README.md                    本文件
 ├─ LICENSE
 ├─ .gitignore
-└─ templates/
-   └─ 01-vitepress-docs-site/
-      ├─ README.md              模板自己的说明
-      ├─ GUIDES/                怎么用这份模板
-      ├─ docs/                  站点源码
+├─ templates/                   模板本体
+│  └─ 01-vitepress-docs-site/
+│     ├─ README.md              模板自己的说明
+│     ├─ GUIDES/                怎么用这份模板
+│     ├─ docs/                  站点骨架
+│     └─ package.json
+└─ examples/                    用模板填出来的成品站
+   └─ selfhost-notes/
+      ├─ README.md
+      ├─ docs/
       └─ package.json
 ```
 
@@ -81,6 +88,8 @@ site-templates/
 ## 贡献
 
 新增模板时：建 `templates/NN-xxx/` 目录 → 照着 `01` 的结构组织 → 在本文件索引表加一行 → 提交。
+
+每个模板建议配一个 `examples/` 成品站。空骨架看不出结构怎么落地，填完的实例才是最好的说明。
 
 ## 许可
 
