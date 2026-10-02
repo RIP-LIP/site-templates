@@ -1,0 +1,12 @@
+node_modules
+dist
+.vitepress/dist
+.vitepress/cache
+.DS_Store
+Thumbs.db
+
+# 敏感文件永远不提交
+.env
+.env.*
+*.key
+*.pem

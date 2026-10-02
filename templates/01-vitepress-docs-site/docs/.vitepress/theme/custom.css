@@ -1,0 +1,44 @@
+/**
+ * 站点级样式覆盖
+ * ----------------------------------------------------------------------------
+ * 换主题的改法（只改这一段，其余不动）：
+ *   1. 把下面 6 个颜色换成你的品牌色
+ *   2. 刷新页面确认浅色/深色两种模式都可读
+ *
+ * 纪律：优先改 VitePress 官方 CSS 变量，不要手写组件选择器。
+ * 手写 `.VPNavBar` 这类选择器会在版本升级时静默失效。
+ */
+
+:root {
+  /* ── 品牌色：整套只改这几个值 ──────────────────────────────────
+     取色建议：先定一个 600 左右的饱和色作为 brand-1，
+     brand-2/3 是它的提亮版（用于 hover 和深色模式），
+     三个值的明度递增关系不要反。 */
+  --vp-c-brand-1: #3451b2;
+  --vp-c-brand-2: #3a5cc9;
+  --vp-c-brand-3: #5673d6;
+  --vp-c-brand-soft: rgba(52, 81, 178, 0.14);
+
+  /* ── 首页 Hero ────────────────────────────────────────────── */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #3451b2 30%, #41b0c3);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #3451b2 50%, #41b0c3 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+/* 中文正文行距略微放宽，长段落更易读 */
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.85;
+}
+
+/* 窄屏下表格和代码块横向滚动，而不是撑破布局 */
+@media (max-width: 640px) {
+  .vp-doc div[class*='language-'] {
+    font-size: 13px;
+  }
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+  }
+}

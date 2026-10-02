@@ -1,0 +1,33 @@
+{
+  "name": "vitepress-docs-template",
+  "version": "1.0.0",
+  "private": false,
+  "description": "教程型文档站模板：VitePress + 三段式信息架构（上手 / 场景 / 原理）+ 速查表附录",
+  "keywords": [
+    "vitepress",
+    "documentation",
+    "docs-site",
+    "tutorial-site",
+    "knowledge-base",
+    "user-manual",
+    "handbook",
+    "static-site",
+    "vue",
+    "markdown",
+    "chinese-docs",
+    "教程站",
+    "文档站",
+    "知识库",
+    "帮助中心",
+    "使用手册"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
